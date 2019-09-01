@@ -10,7 +10,7 @@
                 </span>
                 in
                 {{ with .Params.categories -}}
-                <i class="iconfont icon-folder"></i>
+                <i class="fas fa-folder"></i>
                 <span class="post-category">
                         {{ range . }}
                         {{- $name := . -}}
@@ -72,7 +72,7 @@
     <div class="post-tags">
         {{ with .Params.tags }}
             <section>
-            <i class="iconfont icon-tag"></i>Tag(s): 
+            <i class="fab fa-tag"></i>Tag(s): 
             {{ range . }}
             <span class="tag"><a href="{{ "tags/" | absURL }}{{ . | urlize }}/">
                     #{{.}}</a></span>
@@ -87,10 +87,10 @@
 
     <div class="post-nav">
         {{ if .PrevInSection }}
-        <a href="{{.PrevInSection.Permalink}}" class="prev" rel="prev" title="{{ .PrevInSection.Title}}"><i class="iconfont icon-left"></i>&nbsp;{{ .PrevInSection.Title}}</a>
+        <a href="{{.PrevInSection.Permalink}}" class="prev" rel="prev" title="{{ .PrevInSection.Title}}"><i class="fab fa-left"></i>&nbsp;{{ .PrevInSection.Title}}</a>
         {{ end }} 
         {{ if .NextInSection }}
-        <a href="{{.NextInSection.Permalink}}" class="next" rel="next" title="{{.NextInSection.Title}}">{{.NextInSection.Title}}&nbsp;<i class="iconfont icon-right"></i></a>
+        <a href="{{.NextInSection.Permalink}}" class="next" rel="next" title="{{.NextInSection.Title}}">{{.NextInSection.Title}}&nbsp;<i class="fab fa-right"></i></a>
         {{ end }}
     </div>
 

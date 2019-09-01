@@ -1,5 +1,5 @@
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   {{ $style := resources.Get "css/main.scss" | resources.ToCSS | resources.Minify}}
-  {{ $iconfont := resources.Get "font/iconfont.css" }}
-  <link rel="stylesheet" href="{{ $iconfont.RelPermalink }}">
   <link rel="stylesheet" href="{{ $style.RelPermalink }}">
 

@@ -48,7 +48,36 @@
         background-color: transparent;
       }
     }
-    .iconfont {
-      font-size: 2em;
+    .fab {
+      font-size: 1.28571429em;
+      text-align: center;
+    }
+    .fas {
+      font-size: 1.28571429em;
+      text-align: center;
     }
   }
+
+.btn {
+  background-color: #ddd;
+  border: none;
+  border-radius: 25px;
+  color: black;
+  padding: 8px 18px;
+  text-align: center;
+  font-size: 12px;
+  margin: 4px 2px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #77c2fc;
+  color: white;
+}
+
+hr.garis { 
+  border: 1px solid;
+  text-align: center;
+  width: 20%;
+  margin: auto;
+}

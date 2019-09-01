@@ -6,6 +6,11 @@
         <a href="/posts/"> <img src="{{ (printf "%s%s" $cdn_url $avatar)}}"> </a>
     </div>
     {{ end }}
+    <h3>
+       Khusika Dhamar Gusti
+    </h3>
+    <hr class="garis">
+    </hr>
     {{ with .Site.Params.subtitle}}
     <h2 class="description">
        {{ . }}
@@ -13,6 +18,11 @@
     {{ end }}
     <div class="social-links">
       {{ partial "social.html" . }}
+    </div>
+    <div class="col-lg-8 col-lg-offset-2 text-center">
+        <a href="https://goo.gl/xGvRDv" target="_blank" class="btn">
+            <i class="fas fa-download"></i> VIEW RESUME
+        </a>
     </div>
 </div>
 
