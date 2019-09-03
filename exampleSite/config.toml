@@ -44,6 +44,7 @@ preserveTaxonomyNames = true
     author = "Covey.Liu"                           # Author's name
     avatar = "/images/me/avatar.jpeg"           # Author's avatar
     avatar_dark = "/images/me/avatar_dark.jpeg" # Optional dark theme avatar
+    socialShare = true
     subtitle = "我会更好，因为我没有停止"         # Subtitle
     cdn_url = ""           # Base CDN URL
     home_mode = "" # post or other
@@ -67,3 +68,9 @@ preserveTaxonomyNames = true
     Dribbble = "xxoo"
     Medium = "xxoo"
 
+[params.share]
+    Twitter = true
+    Facebook = true
+    #Reddit = true
+    Linkedin = true
+    #Pinterest = true

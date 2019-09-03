@@ -62,6 +62,13 @@
                     <span><a href={{ . }}>{{ . }}</a></span>
             </p>
             {{ end }}
+
+            <p class="copyright-item">
+                {{ if and ( $.Param "socialShare" ) (gt (len ($.Param "share")) 0) }}
+                <span>Share: </span>
+                <span>{{ partial "share-links" . }}</span>
+                {{ end }}
+            </p>
     </div>
 
   
