@@ -20,11 +20,11 @@
         <div class="navbar-header">
             <div>
             {{ if .IsHome }}
-            <a href="javascript:void(0);" class="theme-switch"><i class="fas fa-adjust"></i></a>&nbsp; | <a href="{{.Site.BaseURL}}">{{ .Site.Title }}</a></div>
+            <a href="javascript:void(0);" class="theme-switch"><i class="fas fa-adjust"></i></a>&nbsp; | <a href="{{.Site.BaseURL}}">{{ .Site.Title }}</a>
             {{ else }}
             <a href="javascript:void(0);" class="theme-switch"><i class="fas fa-adjust"></i></a>&nbsp; | <a href="{{ .Site.BaseURL }}">Home</a>
             {{ end }}
-
+            </div>
             <div class="menu-toggle">
                 <span></span><span></span><span></span>
             </div>
