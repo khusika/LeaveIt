@@ -1,7 +1,9 @@
 <footer class="footer">
     <div class="copyright">
         &copy;
-        <span itemprop="copyrightYear">{{ now.Year }},</span>
+         {{ with .Site.Params.since }}
+            <span itemprop="copyrightYear">{{.}} - {{ now.Year }},</span>
+         {{ end }}
          {{ if .Site.Params.author }}
             <span class="author" itemprop="copyrightHolder"><a href="{{ .Site.BaseURL }}">{{ .Site.Params.author  }}</a>. All Rights Reserved.</span> 
          {{ end }}
