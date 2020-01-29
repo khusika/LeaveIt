@@ -65,7 +65,7 @@
   }
 
 .btn {
-  background-color: #ddd;
+  background-color: $dark-global-link-color;
   border: none;
   border-radius: 25px;
   color: black;
@@ -74,11 +74,17 @@
   font-size: 12px;
   margin: 4px 2px;
   transition: 0.3s;
+  .dark-theme & {
+    color: $light-global-link-color;
+  }
 }
 
 .btn:hover {
-  background-color: #77c2fc;
-  color: white;
+  background-color: #ddd;
+  color: $light-global-link-hover-color;
+  .dark-theme & {
+    color: $dark-global-link-hover-color;
+  }
 }
 
 hr.garis { 
