@@ -30,16 +30,10 @@ jQuery(function($) {
     };
 
     _Blog.toggleTheme = function() {
-        if(!window.localStorage.getItem('theme')){
-                window.localStorage.setItem('theme', 'dark');
-        }
-        const currentTheme = window.localStorage && window.localStorage.getItem('theme')
-        const isDark = currentTheme === 'dark'
-        $('body').toggleClass('dark-theme', isDark)
         $('.theme-switch').on('click', () => {
             $('body').toggleClass('dark-theme')
-            window.localStorage &&
-                window.localStorage.setItem('theme', document.body.classList.contains('dark-theme') ? 'dark' : 'light', )
+            window.isDark = !window.isDark;
+            window.localStorage && window.localStorage.setItem('theme', window.isDark ? 'dark' : 'light');
         })
     }
 

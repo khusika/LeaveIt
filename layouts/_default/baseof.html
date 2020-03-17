@@ -2,13 +2,21 @@
 <html lang="{{ .Site.LanguageCode }}">
   {{ partial "head.html" . }}
   <body class="">
+    <script>
+         if (!window.localStorage || !window.localStorage.getItem('theme')) {
+             window.isDark = 'dark' === 'dark';
+         } else {
+             window.isDark = (window.localStorage && window.localStorage.getItem('theme')) === 'dark';
+         }
+         window.isDark && document.body.classList.add('dark-theme');
+    </script>
     <div class="wrapper">
         {{ partial "header" . }}
-    	 <main class="main">
+         <main class="main">
           <div class="container">
       		{{ block "content" . }}{{ end }}
           </div>
-		   </main>
+         </main>
       {{ partial "footer.html" . }}
      </div>
   </body>
