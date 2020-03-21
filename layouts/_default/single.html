@@ -15,7 +15,7 @@
                         {{ range . }}
                         {{- $name := . -}}
                         {{- with $.Site.GetPage "taxonomy" (printf "categories/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "categories/%s" ($name | urlize))) -}}
-                          <a href="{{ .Permalink }}"> {{ $name }} </a>
+                          <a href="{{ .Permalink }}">&nbsp;{{ $name }}&nbsp;</a>
                         {{ end -}}
                         {{ end }}
                 </span>
@@ -65,7 +65,6 @@
 
             <p class="copyright-item">
                 {{ if and ( $.Param "socialShare" ) (gt (len ($.Param "share")) 0) }}
-                <span>Share: </span>
                 <span>{{ partial "share-links" . }}</span>
                 {{ end }}
             </p>

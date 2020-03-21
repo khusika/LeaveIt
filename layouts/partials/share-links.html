@@ -2,31 +2,31 @@
 
       {{ if or .Params.Share.Twitter (and .Site.Params.Share.Twitter (ne .Params.Share.Twitter false)) }}
         <a href="//twitter.com/share?url={{ .Permalink }}&amp;text={{ .Title }}&amp;via={{ .Site.Params.Social.Twitter }}" target="_blank" title="Share on Twitter">
-          <i class="fab fa-twitter-square"></i>
+          <i class="fab fa-twitter-square">&nbsp;</i>
         </a>
       {{ end }}
 
       {{ if or .Params.Share.Facebook (and .Site.Params.Share.Facebook (ne .Params.Share.Facebook false)) }}
         <a href="//www.facebook.com/sharer/sharer.php?u={{ .Permalink }}" target="_blank" title="Share on Facebook">
-          <i class="fab fa-facebook-square"></i>
+          <i class="fab fa-facebook-square">&nbsp;</i>
         </a>
       {{ end }}
 
       {{ if or .Params.Share.Reddit (and .Site.Params.Share.Reddit (ne .Params.Share.Reddit false)) }}
         <a href="//reddit.com/submit?url={{ .Permalink }}&amp;title={{ .Title }}" target="_blank" title="Share on Reddit">
-          <i class="fab fa-reddit-square"></i>
+          <i class="fab fa-reddit-square">&nbsp;</i>
         </a>
       {{ end }}
 
       {{ if or .Params.Share.Linkedin (and .Site.Params.Share.Linkedin (ne .Params.Share.Linkedin false)) }}
         <a href="//www.linkedin.com/shareArticle?url={{ .Permalink }}&amp;title={{ .Title }}" target="_blank" title="Share on LinkedIn">
-          <i class="fab fa-linkedin"></i>
+          <i class="fab fa-linkedin">&nbsp;</i>
         </a>
       {{ end }}
 
       {{ if or .Params.Share.Pinterest (and .Site.Params.Share.Pinterest (ne .Params.Share.Pinterest false)) }}
         <a href="//www.pinterest.com/pin/create/button/?url={{ .Permalink }}&amp;description={{ .Title }}" target="_blank" title="Share on Pinterest">
-          <i class="fab fa-pinterest-square"></i>
+          <i class="fab fa-pinterest-square">&nbsp;</i>
         </a>
       {{ end }}
 

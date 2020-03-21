@@ -2,9 +2,9 @@
     <div class="container">
         <div class="navbar-header header-logo">
                 {{ if .IsHome }}
-        	<a href="javascript:void(0);" class="theme-switch"><i class="fas fa-adjust"></i></a>&nbsp; | <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+        	<a href="javascript:void(0);" class="theme-switch"><i class="fas fa-adjust"></i></a>&nbsp;&nbsp;|&nbsp;<a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
                 {{ else }}
-		<a href="javascript:void(0);" class="theme-switch"><i class="fas fa-adjust"></i></a>&nbsp; | <a href="{{ .Site.BaseURL }}">Home</a>
+		<a href="javascript:void(0);" class="theme-switch"><i class="fas fa-adjust"></i></a>&nbsp;&nbsp;|&nbsp;<a href="{{ .Site.BaseURL }}">Home</a>
                 {{ end }}
         </div>
         <div class="menu navbar-right">
@@ -20,9 +20,9 @@
         <div class="navbar-header">
             <div>
             {{ if .IsHome }}
-            <a href="javascript:void(0);" class="theme-switch"><i class="fas fa-adjust"></i></a>&nbsp; | <a href="{{.Site.BaseURL}}">{{ .Site.Title }}</a>
+            <a href="javascript:void(0);" class="theme-switch"><i class="fas fa-adjust"></i></a>&nbsp;&nbsp;|&nbsp;<a href="{{.Site.BaseURL}}">{{ .Site.Title }}</a>
             {{ else }}
-            <a href="javascript:void(0);" class="theme-switch"><i class="fas fa-adjust"></i></a>&nbsp; | <a href="{{ .Site.BaseURL }}">Home</a>
+            <a href="javascript:void(0);" class="theme-switch"><i class="fas fa-adjust"></i></a>&nbsp;&nbsp;|&nbsp;<a href="{{ .Site.BaseURL }}">Home</a>
             {{ end }}
             </div>
             <div class="menu-toggle">
